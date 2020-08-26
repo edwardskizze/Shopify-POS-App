@@ -1,0 +1,55 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Parameters": {
+        "authshopifyposapp15debc8115debc81UserPoolId": {
+            "Type": "String",
+            "Default": "authshopifyposapp15debc8115debc81UserPoolId"
+        },
+        
+        "authshopifyposapp15debc8115debc81AppClientID": {
+            "Type": "String",
+            "Default": "authshopifyposapp15debc8115debc81AppClientID"
+        },
+        "authshopifyposapp15debc8115debc81AppClientIDWeb": {
+            "Type": "String",
+            "Default": "authshopifyposapp15debc8115debc81AppClientIDWeb"
+        },
+        "AuthRoleArn": {
+            "Type": "String"
+        },
+        "UnauthRoleArn": {
+            "Type": "String"
+        },
+        "env": {
+            "Type": "String"
+        }
+    },
+    "Conditions": {
+        "ShouldNotCreateEnvResources": {
+            "Fn::Equals": [
+                {
+                    "Ref": "env"
+                },
+                "NONE"
+            ]
+        }
+    },
+    "Resources": {
+    
+        "shopospoolGroup": {
+          "Type" : "AWS::Cognito::UserPoolGroup",
+          "Properties" : {
+              "GroupName" : "shopospool",
+              "Precedence" : 1,
+              
+              "UserPoolId" : {
+                "Ref": "authshopifyposapp15debc8115debc81UserPoolId"
+              } 
+            }
+        },
+        
+    
+    
+    },
+    
+}

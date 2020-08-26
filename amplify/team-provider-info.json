@@ -1,0 +1,21 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-shopifyposapp-dev-83816-authRole",
+            "UnauthRoleArn": "arn:aws:iam::723150224531:role/amplify-shopifyposapp-dev-83816-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::723150224531:role/amplify-shopifyposapp-dev-83816-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-shopifyposapp-dev-83816-deployment",
+            "UnauthRoleName": "amplify-shopifyposapp-dev-83816-unauthRole",
+            "StackName": "amplify-shopifyposapp-dev-83816",
+            "StackId": "arn:aws:cloudformation:us-east-2:723150224531:stack/amplify-shopifyposapp-dev-83816/0254cec0-d6f7-11ea-b7d7-0637938c6fca",
+            "AmplifyAppId": "d18l2yi8ymf5eh"
+        },
+        "categories": {
+            "auth": {
+                "shopifyposapp15debc8115debc81": {},
+                "userPoolGroups": {}
+            }
+        }
+    }
+}
